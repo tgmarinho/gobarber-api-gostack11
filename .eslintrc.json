@@ -31,7 +31,8 @@
       { "prefixWithI": "always" }
     ],
     "prettier/prettier": "error",
-    "import/extensions": ["error", "ignorePackages", { "ts": "never" }]
+    "import/extensions": ["error", "ignorePackages", { "ts": "never" }],
+    "no-useless-constructor": "off"
   },
   "settings": {
     "import/resolver": {
