@@ -5,3 +5,5 @@ buid/
 
 temp/*
 !temp/.gitkeep
+coverage/
+.DS_Store
