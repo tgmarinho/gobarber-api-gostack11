@@ -15,7 +15,6 @@
 </p>
 </br>
 
-
 ## :speech_balloon: Sobre
 
 API GoBarber, aplicação que conecta prestadores de serviço (Barbeiros e Cabeleireiros) aos clientes em suas regiões. Aplicação
@@ -39,16 +38,15 @@ Faz parte do projeto GoBarber
 - [TypeORM](https://typeorm.io/#/): ORM
 - [Eslint](https://eslint.org/): Padronização de código
 - [Jest](https://jestjs.io/): Testes
-- [tsyringe](https://github.com/microsoft/tsyringe): Lib de injeção de dependencias.
--[uuidv4](https://github.com/thenativeweb/uuidv4#readme): uuid.
+- [tsyringe](https://github.com/microsoft/tsyringe): Lib de injeção de dependencias. -[uuidv4](https://github.com/thenativeweb/uuidv4#readme): uuid.
 
 :warning: Durante o desenvolvimento irei atualizando a lista de tecnologia
 
 ## 🔖 Layout
 
-  Uma API Rest, que retorna o conteúdo em JSON que vai ser consumida tanto por um Front-end em [ReactJS](https://reactjs.org/) quanto por uma aplicação Mobile Hibrido com [React Native](https://reactnative.dev/).
+Uma API Rest, que retorna o conteúdo em JSON que vai ser consumida tanto por um Front-end em [ReactJS](https://reactjs.org/) quanto por uma aplicação Mobile Hibrido com [React Native](https://reactnative.dev/).
 
-  ### Base da Aplicação.
+### Base da Aplicação.
 
     Requisitos funcionais:
       [] 100% de cobertura de testes nos services da aplicação.
@@ -64,10 +62,10 @@ Faz parte do projeto GoBarber
       - Utilizar Amazon SES para envios de email em ambiente de Produção.
       - Utilizar Eslint, Prettier e EditorConfig para padronizar o código em ambiente de desenvolvimento, com a style guide do AirBnb
 
-  ### Criação de usuário
+### Criação de usuário
 
     Requisitos Funcionais:
-      [] Criação de conta com (Nome, Email, Senha);
+      [x] Criação de conta com (Nome, Email, Senha);
       [] Envio de email confirmando criação de conta;
 
     Requisitos Não Funcionais:
@@ -78,8 +76,7 @@ Faz parte do projeto GoBarber
       [] O usuário deve confirmar a senha ao criar uma conta.
       [] A senha deve ser Hasheada antes de ser gravada no banco de dados;
 
-
-  ### Autenticação
+### Autenticação
 
     Requisitos Funcionais:
       [] O usuário deve poder se Autenticar utilizando email e senha;
@@ -88,14 +85,14 @@ Faz parte do projeto GoBarber
       - A autenticação deve ser feita com Json Web Token (JWT);
 
     Regras de Negócio:
-      [] No payload do token deve ser armazenado o ID do usuário;
+      [x] No payload do token deve ser armazenado o ID do usuário;
 
-  ### Recuperação de Senha
+### Recuperação de Senha
 
     Requisitos Funcionais:
-      [] O usuário deve poder recuperar sua senha informando o seu email;
-      [] O usuário de receber um email com instruções de recuperação de senha;
-      [] O usuário deve poder resetar sea senha ;
+      [x] O usuário deve poder recuperar sua senha informando o seu email;
+      [x] O usuário de receber um email com instruções de recuperação de senha;
+      [x] O usuário deve poder resetar sua senha ;
 
     Requisitos Não Funcionais:
       - Envio de email utilizando lib Nodemailer;
@@ -103,22 +100,20 @@ Faz parte do projeto GoBarber
 
 
     Regras de Negócio:
-      [] O link enviado por email para resetar a senha, deve expirar em 2h;
-      [] O usuário precisa confirmar a nova senha ao resetar sua senha.
+      [x] O link enviado por email para resetar a senha, deve expirar em 2h;
+      [x] O usuário precisa confirmar a nova senha ao resetar sua senha.
 
-  ### Atualização de Perfil
+### Atualização de Perfil
 
     Requisitos Funcionais:
       [] O usuário deve poder atualizar seu perfil (nome, email, senha, Avatar);
 
     Regras de Negócio:
-      [] O usuário não pode alterar seu email para um email ja em uso na aplicação
-      [] Para atulizar sua senha, o usuário deve informar a senha antiga;
-      [] Para atulizar sua senha, o usuário precisa confirmar a senha;
+      [x] O usuário não pode alterar seu email para um email ja em uso na aplicação
+      [x] Para atulizar sua senha, o usuário deve informar a senha antiga;
+      [x] Para atulizar sua senha, o usuário precisa confirmar a senha;
 
-
-
-  ### Painel de usuário (Prestador de serviço)
+### Painel de usuário (Prestador de serviço)
 
     Requisitos Funcionais:
       [] O prestador deve poder listar os seus agendamentos de um dia especifico;
@@ -134,7 +129,7 @@ Faz parte do projeto GoBarber
     Regras de Negócio:
       [] A notificação deve ter um status de lida ou não-lida para que o prestador possa controlar;
 
-  ### Agendamento de serviço
+### Agendamento de serviço
 
     Requisitos Funcionais:
       [] O usuário deve poder listar todos os prestadores de serviço cadastrados;
@@ -153,13 +148,12 @@ Faz parte do projeto GoBarber
       [] O usuário não pode agendar em um horário já ocupado;
       [] O usuário não pode agendar em um horário que já passou;
       [] O usuário não pode agendar consigo mesmo;
+
 ---
 
-## :book:  **Thiago Marinho**
+## :book: **Thiago Marinho**
 
 Desafio realizado por Thiago Marinho de Oliveira.
-
-
 
 ## tips/scripts
 
