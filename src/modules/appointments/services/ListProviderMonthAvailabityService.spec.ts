@@ -13,33 +13,30 @@ describe('ResetPasswordService', () => {
   });
 
   it('should be able to list providers availables in the month', async () => {
-    await fakeAppointmentsRepository.create({
-      provider_id: 'user',
-      date: new Date(2020, 3, 20, 8, 0, 0),
-    });
+    const promissesCreateAppointmentInBusinessHours = Array.from(
+      { length: 10 },
+      (_, index) => {
+        return fakeAppointmentsRepository.create({
+          provider_id: 'user',
+          date: new Date(2020, 3, 20, index + 8, 0, 0),
+        });
+      },
+    );
+
+    await Promise.all(promissesCreateAppointmentInBusinessHours);
 
     await fakeAppointmentsRepository.create({
       provider_id: 'user',
-      date: new Date(2020, 4, 20, 8, 0, 0),
-    });
-
-    await fakeAppointmentsRepository.create({
-      provider_id: 'user',
-      date: new Date(2020, 4, 20, 10, 0, 0),
-    });
-
-    await fakeAppointmentsRepository.create({
-      provider_id: 'user',
-      date: new Date(2020, 4, 21, 8, 0, 0),
+      date: new Date(2020, 3, 21, 8, 0, 0),
     });
 
     const availability = await listProviderMonthAvailabity.execute({
       provider_id: 'user',
       year: 2020,
-      month: 5,
+      month: 4,
     });
 
-    expect(availability).toEqual(
+    await expect(availability).toEqual(
       expect.arrayContaining([
         {
           day: 19,
@@ -51,7 +48,7 @@ describe('ResetPasswordService', () => {
         },
         {
           day: 21,
-          available: false,
+          available: true,
         },
         {
           day: 22,
