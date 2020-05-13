@@ -7,3 +7,5 @@ temp/*
 !temp/.gitkeep
 coverage/
 .DS_Store
+.env
+ormconfig.json
