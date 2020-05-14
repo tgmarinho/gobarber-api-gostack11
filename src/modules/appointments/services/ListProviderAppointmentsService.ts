@@ -1,7 +1,6 @@
 import { injectable, inject } from 'tsyringe';
 import Appointment from '@modules/appointments/infra/typeorm/entities/Appointment';
 import ICacheProvider from '@shared/container/providers/CacheProvider/models/ICacheProvider';
-import cache from '@config/cache';
 import IAppointmentsRepository from '../repositories/IAppointmentsRepository';
 
 interface IRequest {
