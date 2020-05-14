@@ -1,5 +1,5 @@
 interface IMailConfig {
-  driver: 'ethreal' | 'custom';
+  driver: 'ethereal' | 'custom';
 }
 
 export default {
