@@ -38,7 +38,8 @@ Faz parte do projeto GoBarber
 - [TypeORM](https://typeorm.io/#/): ORM
 - [Eslint](https://eslint.org/): Padronização de código
 - [Jest](https://jestjs.io/): Testes
-- [tsyringe](https://github.com/microsoft/tsyringe): Lib de injeção de dependencias. -[uuidv4](https://github.com/thenativeweb/uuidv4#readme): uuid.
+- [tsyringe](https://github.com/microsoft/tsyringe): Lib de injeção de dependências.
+- [uuidv4](https://github.com/thenativeweb/uuidv4#readme): Gerador de uuid.
 
 :warning: Durante o desenvolvimento irei atualizando a lista de tecnologia
 
@@ -163,7 +164,7 @@ Desafio realizado por Thiago Marinho de Oliveira.
 
 Terminal: `yarn typeorm migration:create -n CreateAppointments`
 
-- Execugtar migration: `yarn typeorm migration:run`
+- Executar migration: `yarn typeorm migration:run`
 - Rollback desfazer : `yarn typeorm migration:revert`
 
 Ver quais migrations já foram executadas:
