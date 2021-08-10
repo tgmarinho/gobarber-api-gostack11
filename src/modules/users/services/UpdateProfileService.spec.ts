@@ -3,7 +3,7 @@ import FakeHashProvider from '@modules/users/providers/HashProvider/fakes/FakeHa
 import FakeUsersRepository from '../repositories/fakes/FakeUsersRepository';
 import UpdateProfileService from './UpdateProfileService';
 
-describe('UpdateUserAvatar', () => {
+describe('UpdateUserProfile', () => {
   let fakeUsersRepository: FakeUsersRepository;
   let fakeHashProvider: FakeHashProvider;
   let updateProfile: UpdateProfileService;
