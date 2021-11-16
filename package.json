@@ -14,7 +14,7 @@
     "@types/cors": "^2.8.6",
     "@types/hapi__joi": "^17.1.0",
     "@types/ioredis": "^4.16.2",
-    "aws-sdk": "^2.676.0",
+    "aws-sdk": "^2.814.0",
     "bcryptjs": "^2.4.3",
     "celebrate": "^12.1.1",
     "class-transformer": "^0.2.3",
